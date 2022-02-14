@@ -13,16 +13,48 @@ function Home() {
         />
 
         <div className="home__row">
-          <Product />
-          {/* Product */}
-          {/* Product */}
+          <Product
+            title="The Lean Startup: How Constant Innovation Creates Radically Sucesssful Businesses Paperback"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            rating={3}
+          />
+          <Product
+            title="Samsung Galaxy Buds Pro"
+            price={199.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            rating={4}
+          />
+          <Product
+            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
+            price={98.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            rating={5}
+          />
         </div>
 
-        <div className="home__row">{/* Product */}</div>
+        <div className="home__row">
+          <Product
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
+            price={729.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            rating={4}
+          />
+        </div>
 
         <div className="home__row">
-          {/* Product */}
-          {/* Product */}
+          <Product
+            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
+            price={598.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            rating={5}
+          />
+          <Product
+            title="The lean startup"
+            price={29.99}
+            image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            rating={3}
+          />
         </div>
       </div>
     </div>
