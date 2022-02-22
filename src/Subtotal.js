@@ -1,4 +1,5 @@
 import React from "react";
+import "./Subtotal.css";
 import CurrencyFormat from "react-currency-format";
 
 function Subtotal() {
@@ -8,7 +9,7 @@ function Subtotal() {
         renderText={(value) => (
           <>
             <p>
-              Subtotal (0 items):
+              Subtotal (0 items)
               <strong>0</strong>
             </p>
             <small className="subtotal__gift">
@@ -17,7 +18,7 @@ function Subtotal() {
           </>
         )}
         decimalScale={2}
-        value={getBasketToatl(basket)}
+        value={0}
         displayType={"text"}
         thousandSeparator={true}
         prefix={"$"}
