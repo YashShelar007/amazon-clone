@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { auth } from "./firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 function Login() {
   const history = useNavigate();
@@ -12,8 +14,7 @@ function Login() {
   const signIn = (e) => {
     e.preventDefault();
 
-    auth
-      .signInWithUserWithEmailAndPassword(email, password)
+    signInWithEmailAndPassword(auth, email, password)
       .then((auth) => {
         history.push("/");
       })
@@ -23,8 +24,7 @@ function Login() {
   const register = (e) => {
     e.preventDefault();
 
-    auth
-      .createUserWithEmailAndPassword(email, password)
+    createUserWithEmailAndPassword(auth, email, password)
       .then((auth) => {
         console.log(auth);
         if (auth) {
