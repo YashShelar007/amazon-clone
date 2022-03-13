@@ -1,4 +1,4 @@
-import firebase from "firebase";
+import { initializeApp } from "firebase/app";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -8,5 +8,11 @@ const firebaseConfig = {
   storageBucket: "clone-challenge-b0c53.appspot.com",
   messagingSenderId: "995426234832",
   appId: "1:995426234832:web:af853723f2a672d9dd89d5",
-  measurementId: "G-KMQFM2LDXM",
 };
+
+const firebaseApp = initializeApp(firebaseConfig);
+
+const db = firebaseApp.fireStore();
+const auth = firebaseApp.auth();
+
+export { db, auth };
