@@ -3,6 +3,8 @@ import "./Checkout.css";
 import Subtotal from "./Subtotal";
 
 function Checkout() {
+  const [{ basket }, dispatch] = useStateValue();]
+
   return (
     <div className="checkout">
       <div className="checkout__left">
@@ -14,11 +16,11 @@ function Checkout() {
 
         <div>
           <h2 className="checkout__title">Your shopping basket</h2>
-          {/* BasketItem */}
-          {/* BasketItem */}
-          {/* BasketItem */}
-          {/* BasketItem */}
-          {/* BasketItem */}
+
+          {/* Checkout Product */}
+          {/* Checkout Product */}
+          {/* Checkout Product */}
+          {/* Checkout Product */}
         </div>
       </div>
       <div className="checkout__right">
